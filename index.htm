@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trikolor Editor</title>
+
+<link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="vendors/bootstrap/css/bootstrap-fileupload.min.css" rel="stylesheet" media="screen">
+
+<script src="vendors/jquery-1.9.0.min.js"></script>
+<script src="vendors/wikiColors.js"></script>
+<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendors/bootstrap/js/bootstrap-fileupload.min.js"></script>
+
+<script src="main.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Color Name Definition</h1>
+
+  <div class="row">
+    <div class="span2"><strong>Color sample file</strong></div>
+    <div class="span10">
+      <div class="fileupload fileupload-new" data-provides="fileupload">
+        <div class="input-append">
+          <div class="uneditable-input span3"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div><span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input id="file" accept="image/*" autocomplete="off" type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span4" id="sample"></div>
+    <div class="span4 img-rounded" id="average"></div>
+    <div class="span4 img-rounded" id="color"></div>
+  </div>
+  <div class="row" id="headers">
+    <div class="span4">Sample image</div>
+    <div class="span4">Average color</div>
+    <div class="span4">Similar color</div>
+  </div>
+  <div class="row">
+    <div class="span12 lead" id="name"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
